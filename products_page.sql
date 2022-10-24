@@ -1,7 +1,7 @@
 SELECT 
 	product_name,
 	units_in_stock-units_on_order AS units_on_sale,
-	suppliers.contact AS name_supplier,
+	suppliers.contact_1 AS name_supplier,
 	suppliers.phone AS phone_supplier 
 FROM products
 	JOIN categories ON categories.category_id = products.category_id 
